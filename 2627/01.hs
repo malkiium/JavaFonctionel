@@ -24,7 +24,5 @@ facto n =
         then 1
     else n*facto (n-1)
 
-incrementerListe liste =
-    if length liste == 0
-        then []
-        else (head liste + 1) : incrementerListe (tail liste)
+incrementerListe [] = []
+incrementerListe (x:xs) = (x + 1) : incrementerListe xs
