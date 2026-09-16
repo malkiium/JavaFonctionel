@@ -52,7 +52,7 @@ filter1 = filter (\x -> x > 10) [3,15,7,42,10,11]
 foldl1 = foldl (*) 1 [4,6,10]
 
 foldl2 = foldl (++) "" ["Hello", " ", "World"]
-
+ 
 diviser x y =
     if y == 0
         then Nothing
